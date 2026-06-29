@@ -5,7 +5,7 @@ services:
     plan: free
     runtime: docker
     dockerContext: Springboot
-    dockerfilePath: Dockerfile
+    dockerfilePath: Springboot/Dockerfile
 
   # Frontend
   - type: web
