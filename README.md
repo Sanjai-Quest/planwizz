@@ -9,7 +9,7 @@
   </p>
 
   <p>
-    <img src="https://img.shields.io/badge/Backend-FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI">
+    <img src="https://img.shields.io/badge/Backend-FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI">/
     <img src="https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
     <img src="https://img.shields.io/badge/Deployment-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white" alt="Render">
   </p>
@@ -19,7 +19,7 @@
 
 ## 🚀 Overview
 
-**PlanWizz** (SEC-TimeTable) is an advanced and intuitive scheduling system designed to make academic timetable generation effortless. By parsing raw PDF enrollment data and applying advanced CSP algorithms, it ensures zero time clashes while respecting both strict requirements and soft preferences.
+**PlanWizz** (SEC-TimeTable) is an advanced and intuitive scheduling system designed to make academic timetable generation effortless. By parsing raw PDF enrollment data and applying advanced CSP algorithms, it ensures zero time clashes while resp;cting both strict requirements and soft preferences.
 
 ## ✨ Key Features
 
@@ -33,32 +33,31 @@
 
 The repository is modular and split into two core environments:
 
-- 📂 `backend/`: FastAPI application containing all PDF parsing logic and the CSP timetabling engine.
+- 📂 `Springboot/`: Spring Boot 3 + Java 17 application containing all PDF parsing logic and the CSP timetabling engine. (Default/Active backend).
+- 📂 `backend/`: Legacy FastAPI application containing all PDF parsing logic and the CSP timetabling engine.
 - 📂 `frontend/`: React + Vite web application containing the user interface.
-- 📄 `extract_pdf.py`: Standalone Python utility dedicated purely to PDF data extraction.
 
 ## 🚦 Getting Started
 
 ### Prerequisites
 
 Ensure you have the following installed before proceeding:
-- **Python 3.8+**
+- **Java JDK 17+** and **Maven 3.8+**
 - **Node.js 18+**
 - **npm** (Node Package Manager)
 
-### 1️⃣ Backend Setup
+### 1️⃣ Backend Setup (Spring Boot)
 
-Open a terminal at the root of the project to initialize the API:
+Navigate to the `Springboot` directory:
 
 ```bash
-# Install backend dependencies
-pip install -r backend/requirements.txt
+# Build the application
+mvn clean package
 
-# Start the backend server
-python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
+# Run the Spring Boot backend server
+mvn spring-boot:run
 ```
 > The API will run at `http://localhost:8000`
-> *Interactive API Documentation available at `http://localhost:8000/docs`*
 
 ### 2️⃣ Frontend Setup
 

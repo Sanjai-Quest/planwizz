@@ -1,0 +1,13 @@
+com\planwizz\timetable\controller\TimetableController.class
+com\planwizz\timetable\service\CspSolverService$SolverInstance.class
+com\planwizz\timetable\service\CspSolverService$SolverInstance$OptionKey.class
+com\planwizz\timetable\service\PdfExtractorService$CurrentCourse.class
+com\planwizz\timetable\service\PdfExtractorService$CourseKey.class
+com\planwizz\timetable\service\CspSolverService.class
+com\planwizz\timetable\model\TextUploadRequest.class
+com\planwizz\timetable\model\Course.class
+com\planwizz\timetable\model\PreferenceRequest.class
+com\planwizz\timetable\TimetableApplication.class
+com\planwizz\timetable\config\WebConfig.class
+com\planwizz\timetable\service\PdfExtractorService$RawRow.class
+com\planwizz\timetable\service\PdfExtractorService.class
