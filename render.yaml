@@ -10,7 +10,6 @@ services:
   # Frontend
   - type: web
     name: planwizz-frontend
-    plan: free
     runtime: static
     buildCommand: cd frontend && npm install && npm run build
     staticPublishPath: frontend/dist
