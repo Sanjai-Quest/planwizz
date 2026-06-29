@@ -2,6 +2,7 @@ services:
   # Backend
   - type: web
     name: planwizz-backend
+    plan: free
     runtime: docker
     dockerContext: Springboot
     dockerfilePath: Dockerfile
@@ -9,6 +10,7 @@ services:
   # Frontend
   - type: web
     name: planwizz-frontend
+    plan: free
     runtime: static
     buildCommand: cd frontend && npm install && npm run build
     staticPublishPath: frontend/dist
