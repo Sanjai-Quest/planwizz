@@ -7,9 +7,9 @@ services:
     dockerfilePath: Dockerfile
 
   # Frontend
-  - type: static
+  - type: web
     name: planwizz-frontend
-    env: static
+    runtime: static
     buildCommand: cd frontend && npm install && npm run build
     staticPublishPath: frontend/dist
     envVars:
