@@ -26,3 +26,6 @@ htmlcov/
 *.egg-info/
 test_extraction.py test_regex.py
 sample_enrollment.txt
+target/
+.venv/
+
