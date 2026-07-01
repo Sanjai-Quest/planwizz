@@ -1,7 +1,15 @@
 import axios from 'axios';
 
+let baseURL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
+
+// Render's `property: host` provides the raw service host URL (e.g. https://planwizz-backend.onrender.com)
+// which lacks the "/api" context path prefix. Ensure it is appended if missing.
+if (baseURL && !baseURL.endsWith('/api') && !baseURL.endsWith('/api/')) {
+    baseURL = baseURL.endsWith('/') ? `${baseURL}api` : `${baseURL}/api`;
+}
+
 const api = axios.create({
-    baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8000/api'
+    baseURL
 });
 
 export const uploadPDF = async (file) => {
