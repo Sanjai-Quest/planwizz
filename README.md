@@ -5,7 +5,7 @@
   <p><strong>A Constraint Satisfaction Problem (CSP) solver built to generate clash-free student timetables from PDF enrollment data.</strong></p>
 
   <p>
-    <a href="https://planwizzz.onrender.com/"><strong>🟢 Live Project Link - Try It Now!</strong></a>
+    <a href="https://planwizz-frontend-2x1o.onrender.com"><strong>🟢 Live Project Link - Try It Now!</strong></a>
   </p>
 
   <p>
